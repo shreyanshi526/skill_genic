@@ -50,7 +50,7 @@ const JobDesModal = ({
                     </div>
 
                     {/* bullets */}
-                    <div className="flex flex-row gap-6 mt-[1.35rem] justify-center">
+                    <div className="flex justify-center sm:flex-row gap-6  ml-3 sm:ml-0 mt-[1.3rem]">
                         <span className="flex flex-row gap-2">
                             <div className="w-5 h-5 bg-green-600 rounded-full flex justify-center ">
                                 <img
@@ -93,7 +93,7 @@ const JobDesModal = ({
                     </div>
 
                     {/* from fields */}
-                    <form className="flex flex-col w-3/4  left-16 justify-center mt-[2.56rem] relative" onSubmit={handleSubmit(onSubmit)}>
+                    <form className="flex flex-col w-3/4 left-12 mg:left-16 lg:left-24 justify-center mt-[2.56rem] relative" onSubmit={handleSubmit(onSubmit)}>
                         {/* ...1st part */}
                         <div className="flex flex-row justify-start">
                             <p className="text-black text-base font-semibold font-Poppins mt-[0.3rem] cursor-default">
@@ -132,7 +132,7 @@ const JobDesModal = ({
                         <div className="flex justify-center w-full">
                             <button
                                 type="submit"
-                                className="w-[35%] h-12 bg-black rounded-lg mt-4 sm:mt-[2rem] ml-0 sm:ml-[2rem] mb-7 cursor-pointer"
+                                className="w-[50%] mg:w-[43%] sm:w-[35%]  h-12 bg-black rounded-lg mt-4 sm:mt-[2rem] ml-0 sm:ml-[2rem] mb-4 cursor-pointer"
                             >
                                 <p className="text-white text-lg font-medium font-Poppins">
                                     Save & Next

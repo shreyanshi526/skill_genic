@@ -117,7 +117,7 @@ const AddJob = ({ open, Close, setThirdModalOpen, setSecondModalOpen, datas, set
           </div>
 
           {/* form */}
-          <form className="  mt-4 sm:mt-9 w-4/4 pl-6 pr-6 sm:pl-10 sm:pr-10 lg:pl-16 lg:pr-16 xl:pl-24 xl:pr-24 2xl:pl-32 2xl:pr-32 " onSubmit={handleSubmit(onSubmit)}>
+          <form className="  mt-5 sm:mt-9 w-4/4 pl-6 pr-6 sm:pl-10 sm:pr-10 lg:pl-16 lg:pr-16 xl:pl-24 xl:pr-24 2xl:pl-32 2xl:pr-32 " onSubmit={handleSubmit(onSubmit)}>
             <div className="grid grid-cols-2  gap-x-11 w-[100%] ">
               {feilds.map((item) => (
                 <FormFeild key={item.label} label={item.label} value={item.value} />
