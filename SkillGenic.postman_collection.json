@@ -1,0 +1,60 @@
+{
+	"info": {
+		"_postman_id": "787b2a6f-f603-45ce-8cfb-7bb19b47f627",
+		"name": "SkillGenic",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28441622",
+		"_collection_link": "https://warped-space-532852.postman.co/workspace/frontend-apps~45e8d280-16ab-4fc4-b477-3d7cbfd65951/collection/28441622-787b2a6f-f603-45ce-8cfb-7bb19b47f627?action=share&source=collection_link&creator=28441622"
+	},
+	"item": [
+		{
+			"name": "Create Job",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"positionName\": \"Software Engineer\",\r\n    \"companyName\": \"TechCorp\",\r\n    \"jobPipeline\": \"Full Stack\",\r\n    \"addLocation\": \"Remote\",\r\n    \"contractDetails\": \"Permanent\",\r\n    \"minimumSalary\": \"50000\",\r\n    \"maximumSalary\": \"80000\",\r\n    \"currency\": \"USD\",\r\n    \"selectFrequency\": \"Monthly\",\r\n    \"skills\": [\r\n        \"JavaScript\",\r\n        \"React\",\r\n        \"Node.js\"\r\n    ],\r\n    \"responsibility\": [\r\n        {\r\n            \"number\": 1,\r\n            \"sentence\": \"Develop and maintain web applications.\"\r\n        },\r\n        {\r\n            \"number\": 2,\r\n            \"sentence\": \"Collaborate with cross-functional teams.\"\r\n        }\r\n    ],\r\n    \"rounds\": [\r\n        {\r\n            \"name\": \"Round 1\",\r\n            \"description\": \"Technical Assessment\"\r\n        },\r\n        {\r\n            \"name\": \"Round 2\",\r\n            \"description\": \"Interview with Hiring Manager\"\r\n        }\r\n    ],\r\n    \"CheckSkills\": [\r\n        \"Teamwork\",\r\n        \"Problem Solving\"\r\n    ],\r\n    \"Qualification\": true,\r\n    \"Questions\": [\r\n        {\r\n            \"number\": 1,\r\n            \"sentence\": \"What motivated you to apply for this position?\"\r\n        },\r\n        {\r\n            \"number\": 2,\r\n            \"sentence\": \"How do you approach problem-solving?\"\r\n        }\r\n    ],\r\n    \"availbility\": [\r\n        {\r\n            \"number\": 1,\r\n            \"sentence\": \"Available to start immediately.\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/admin/createJob",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"admin",
+						"createJob"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Job Details",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/user/jobDetails",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"user",
+						"jobDetails"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
