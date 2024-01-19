@@ -6,7 +6,7 @@ import IntProcesModal from "./Modals/IntProcesModal";
 import LeftNavbar from "../utils/LeftNavbar";
 import search from "../assets/search 1.png";
 import bell from "../assets/bell.png";
-import dot from "../assets/redDot.png";
+import dot from "../assets/RedDot.png";
 import dp from "../assets/Rectangle 40860.png";
 import menu from "../assets/menu.png";
 import price from "../assets/price.png";
